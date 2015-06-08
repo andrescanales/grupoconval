@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grupoconval</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="container">
+		<div class="header clearfix">
+			<nav>
+			  <ul class="nav nav-pills pull-right">
+			    <li role="presentation"><a href="#">Home</a></li>
+			    <li role="presentation"><a href="#">About</a></li>
+			    <li role="presentation"><a href="#">Contact</a></li>
+			  </ul>
+			</nav>
+			<h3 class="text-muted">Grupo Conval</h3>
+		</div>
+
+		<%= yield %>
+
+      <footer class="footer">
+        <p>© Grupo Conval 2014 | Develop by Andres Canales</p>
+      </footer>
+    </div>
+</body>
+</html>
